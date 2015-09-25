@@ -29,6 +29,7 @@ $(document).ready(function() {
       case 8:
       case 10:
         $(day).width(((dd)/30)*100 +"%");
+        break;
       default:
         $(day).width(((dd)/28)*100 +"%");
     }
