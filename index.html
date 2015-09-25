@@ -1,0 +1,71 @@
+<!doctype html>
+<html>
+
+<head>
+  <title>Progressbar Clock</title>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" integrity="sha256-MfvZlkHCEqatNoGiOXveE8FIwMzZg4W85qfrfIFBfYc= sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha256-k2/8zcNbxVIh5mnQ52A0r3a6jAgMGxFJFE2707UxGCk= sha512-ZV9KawG2Legkwp3nAlxLIVFudTauWuBpC10uEafMHYL0Sarrz5A7G79kXh5+5+woxQ5HM559XX2UZjMJ36Wplg==" crossorigin="anonymous">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha256-Sk3nkD6mLTMOF0EOpNtsIry+s1CsaqQC1rVLTAy+0yc= sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
+  <script src="js/progressclock.js"></script>
+</head>
+
+<body>
+
+  <nav class="navbar navbar-default">
+    <div class="container">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">Progressbar Clock</a>
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      </div>
+      <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container-fluid -->
+  </nav>
+  <div class="container">
+    <div class="container">
+      <div class="progress">
+        <div class="progress-bar progress-bar-danger active progress-bar-striped" id="weekday" role="progressbar" style="width:0%">
+          <span id="weekdaytext">0</span>
+        </div>
+      </div>
+      <div class="progress">
+        <div class="progress-bar progress-bar-warning active progress-bar-striped" id="month" role="progressbar" style="width:0%">
+          <span id="monthtext">0</span>
+        </div>
+      </div>
+      <div class="progress">
+        <div class="progress-bar progress-bar-success active progress-bar-striped" id="day" role="progressbar" style="width:0%">
+          <span id="daytext">0</span>
+        </div>
+      </div>
+      <div class="progress">
+        <div class="progress-bar progress-bar-info active progress-bar-striped" id="hour" role="progressbar" style="width:0%">
+          <span id="hourtext">0</span>
+        </div>
+      </div>
+      <div class="progress">
+        <div class="progress-bar active progress-bar-striped" id="minute" role="progressbar" style="width:0%">
+          <span id="minutetext">0</span>
+        </div>
+      </div>
+      <div class="progress">
+        <div class="progress-bar active progress-bar-striped" id="second" role="progressbar" style="width:0%">
+          <span id="secondtext">0</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
